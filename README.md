@@ -1,73 +1,69 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# Hi-Nest 
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+NomadCoder Lecture Learning NestJS & JEST by create REST API, Unit Test and E2E Test
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## What it Does
 
-## Description
+- Create Variety REST APIs (GET, POST, PATCH, DELETE)
+- Excute Unit Test of all functions in Service
+- Excute E2E Test of Application
+</br>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Getting Started
 
-## Installation
+이 지침을 따르시면 로컬 PC에서 개발과 테스트를 위한 해당 프로젝트의 사본을 실행, 설치, 테스트시킬 수 있습니다.
 
-```bash
-$ npm install
+### Prerequisites
+
+프로젝트를 실행시키기 위해 다음 프로그램들이 필요합니다.
+
 ```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+- NPM (https://nodejs.org/en)
+- Git (https://git-scm.com)
 ```
+### Installing & Starting
 
-## Test
+해당 프로젝트의 사본을 설치 및 실행하기 위해 다음 단계들을 거쳐야 합니다.
 
-```bash
-# unit tests
-$ npm run test
+- git을 통해 로컬에 프로젝트 Clone 하기
 
-# e2e tests
-$ npm run test:e2e
+  > 'https://github.com/gangslee/hi-nest.git' 를 통해 사용자의 로컬 PC로 프로젝트를 Clone 합니다.
 
-# test coverage
-$ npm run test:cov
-```
+* Window의 경우 Git Bash 등을 통해 입력합니다.
+* Linux, MacOS 등등에서는 Terminal을 통해 입력합니다.
+* GitHub Desktop을 통해서도 Clone이 가능합니다.
 
-## Support
+- 로컬 프로젝트의 NPM Update 하기
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+  > 로컬 프로젝트가 설치 된 위치에서 다음 명령어를 통해 앞서 설치한 NPM 패키지들을 Update 합니다.
 
-## Stay in touch
+  ```
+  npm update
+  ```
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- 프로젝트 실행하기
+  > 로컬 프로젝트가 설치 된 위치에서 다음 명령어를 통해 프로젝트를 실행합니다.
+  ```
+  npm run start
+  ```
 
-## License
+- Unit Test 실행하기
+  > 로컬 프로젝트가 설치 된 위치에서 다음 명령어를 통해 Unit 테스트를 실행합니다. 테스트 파일을 관찰하고 변경 내용에 따른 테스트를 실시합니다.
+  ```
+  npm run test:dev
+  ```
+  
+- E2E Test 실행하기
+  > 로컬 프로젝트가 설치 된 위치에서 다음 명령어를 통해 E2E 테스트를 실행합니다. 테스트 파일을 관찰하고 변경 내용에 따른 테스트를 실시합니다.
+  ```
+  npm run test:e2e
+  ```
+## Built With
 
-Nest is [MIT licensed](LICENSE).
+- [NestJS](https://nestjs.com/) - 서버 구축 NodeJS 프레임워크 
+- [Jest](https://jestjs.io/) - 테스트 프레임워크
+- [Insomnia](https://insomnia.rest/) - REST API 테스트 툴
+
+## Authors
+
+- **이경수(grandnet1225@gmail.com)** - [gangselee](https://github.com/gangslee)
